@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans:wght@100&family=Lexend+Deca:wght@100&family=Livvic:wght@100&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar"><!--Side bar-->
+            <div class="top"><!--Top section-->
+               
+                    <img class="imgTop" src="./images/Doctors-pana1.png" alt="#">
+                
+                <div class="profile">
+                    <img src="./images/profile2.jpeg" alt="#">
+                </div>
+                <div class="text">
+                    <h3>Dr.Rim Hassani</h3>
+                    <p>orthopedic</p>
+                </div>
+            </div><!--Top section end-->
+            <div class="line"></div>
+            <div class="bottom"><!--bottom section-->
+                
+                <ul >
+                    <li class = "nav-item">
+                        <a  class = "nav-link"  href="#">
+                            <i class="fa-solid fa-user icon"></i>
+                            <span class="text nav-text">profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class = "nav-link"  href="#">
+                            <i class="fa-solid fa-calendar-check icon googleFont"></i>
+                            <span class="text nav-text">rendez-vous</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class = "nav-link"  href="#">
+                            <i class="fa-solid fa-hospital-user icon"></i>
+                            <span class="text nav-text">patients</span>
+                        </a>
+                    </li>
+                    
+                    <li class = "nav-item">
+                        <a class = "nav-link"  href="#">
+                            <i class="fa-solid fa-blog icon"></i>
+                            <span class="text nav-text">blog</span>
+                        </a>
+                    </li>
+                     
+                    <li class = "nav-item">
+                        <a  class = "nav-link" href="#">
+                            <i class="fa-solid fa-gear icon"></i>
+                            <span class="text nav-text">parametres</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class = "nav-link"  href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket icon .logout "></i>
+                            <span class="text nav-text">log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div><!--bottom section end-->
+            
+        </div> <!--Side bar end-->
+        <div class="main"><!--main section-->
+            <i class="fa-solid fa-gear icon not1"></i>
+            <i class="fa-solid fa-bell not2"></i>
+            <img  class="profile" src="./images/profile2.jpeg" alt="#">
+            
+           <div class="top"><!--top section-->
+                <div class="left">
+                    <h2>Appointment</h2>
+                </div>
+                <div class="right">
+                    <select class="select" name="date" id="dateFilter">
+                        <option value="today">Today</option>
+                        <option value="yesterday">Yesterday</option>
+                        <option value="tomorrow">Tomorrow</option>
+                    </select>
+                    <a class="appointment" href="#">Rendez-vous</a>
+                </div>
+           </div><!--tom section end-->
+
+            <div class="appointment_section"><!--appointment section-->
+                <div class="patient">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th class="image">image</th>
+                            <th>nom </th>
+                            <th>prenom</th>
+                            <th>age</th>
+                            <th>date</th>
+                            <th>heure</th>
+                            <th>genre</th>
+                            <th>prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <img class="patientImg" src="./images/profile-1.jpg" alt="#"> </td>
+                            <td>anas</td>
+                            <td> hidawi</td>
+                            <td>30</td>
+                            <td>2022/06/12</td>
+                            <td>08:00</td>
+                            <td>homme</td>
+                            <td>250dh</td>
+                        </tr>
+                        <tr>
+                            <td> <img class="patientImg" src="./images/profile-1.jpg" alt="#"> </td>
+                            <td>rim</td>
+                            <td>hassani</td>
+                            <td>30</td>
+                            <td>2022/06/12</td>
+                            <td>08:00</td>
+                            <td>homme</td>
+                            <td>250dh</td>
+                        </tr>
+                        <tr>
+                            <td> <img class="patientImg" src="./images/profile-1.jpg" alt="#"> </td>
+                            <td>chorouk</td>
+                            <td> hidawi</td>
+                            <td>30</td>
+                            <td>2022/06/12</td>
+                            <td>08:00</td>
+                            <td>homme</td>
+                            <td>250dh</td>
+                        </tr>
+                        <tr>
+                            <td> <img class="patientImg" src="./images/profile-1.jpg" alt="#"> </td>
+                            <td>chorouk</td>
+                            <td> hidawi</td>
+                            <td>30</td>
+                            <td>2022/06/12</td>
+                            <td>08:00</td>
+                            <td>homme</td>
+                            <td>250dh</td>
+                        </tr>
+                        <tr>
+                            <td> <img class="patientImg" src="./images/profile-1.jpg" alt="#"> </td>
+                            <td>chorouk</td>
+                            <td> hidawi</td>
+                            <td>30</td>
+                            <td>2022/06/12</td>
+                            <td>08:00</td>
+                            <td>homme</td>
+                            <td>250dh</td>
+                        </tr>
+                        <tr>
+                            <td> <img class="patientImg" src="./images/profile-1.jpg" alt="#"> </td>
+                            <td>chorouk</td>
+                            <td> hidawi</td>
+                            <td>30</td>
+                            <td>2022/06/12</td>
+                            <td>08:00</td>
+                            <td>homme</td>
+                            <td>250dh</td>
+                        </tr>
+                        <tr>
+                            <td> <img class="patientImg" src="./images/profile-1.jpg" alt="#"> </td>
+                            <td>chorouk</td>
+                            <td> hidawi</td>
+                            <td>30</td>
+                            <td>2022/06/12</td>
+                            <td>08:00</td>
+                            <td>homme</td>
+                            <td>250dh</td>
+                        </tr>
+                        <tr>
+                            <td> <img class="patientImg" src="./images/profile-1.jpg" alt="#"> </td>
+                            <td>chorouk</td>
+                            <td> hidawi</td>
+                            <td>30</td>
+                            <td>2022/06/12</td>
+                            <td>08:00</td>
+                            <td>homme</td>
+                            <td>250dh</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div><!--appointment section end-->
+
+
+
+
+
+
+
+
+
+
+        </div><!--main section end-->
+    </div>
+</body>
+</html>

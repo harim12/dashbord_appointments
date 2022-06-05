@@ -1,0 +1,284 @@
+:root{
+    --color-green:#13565f;
+    --color-black:#262626;
+    --color-background:#f3f8fe;
+    --shadow:rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    --text-color: #707070;
+    --color-pink:#fe6686;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    position: relative;
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+.container .sidebar{
+    
+    background: white;
+    box-shadow: var(--shadow) ;
+}
+.container .main{
+    width: auto;
+    background: white;
+}
+.container{
+    /* width: 100%;
+    height: 100%; */
+    display: grid;
+    grid-template-columns: .6fr 2fr;
+    gap: 1.5rem;
+   
+}
+/* =========== SIDE BAR====================== */
+.container .sidebar{
+    
+    border-radius: 0 35% 25% 0;
+    height: 100vh;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.container .sidebar  .imgTop{
+    width: 290px;
+    height: 180px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    
+}
+.top .imgTop{
+    border-radius: 0 0  0 0;
+}
+
+.container .sidebar .top .profile img{ 
+    width: 160px;   
+    position: absolute;
+    clip-path: circle();
+    position: absolute;
+    top: 100px;
+    left: 85px;
+    filter: drop-shadow(1px 14px 5px rgb(24, 26, 26));
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #79788c;
+   
+}
+.container .sidebar .top .text{
+    text-align: center;
+    margin-top: 20px;
+}
+.container .sidebar .top .text p{
+    color: #79788c;
+    margin-left: 15px;
+}
+.container .sidebar .top .text h3{
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(71, 61, 61);
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 7px 20px;
+    margin-top: 70px ;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+.nav-item{
+    margin-top: 18px;
+}
+.nav-link:hover{
+    background: #13565f;
+   
+    color:white;
+}
+/* ==================SIDE BAR END============================= */
+
+
+/* =================Main Section====================================== */
+
+/* top section */
+.main{
+    position: relative;
+}
+
+.main .profile{
+    position: absolute;
+    top: 15px;
+    width: 80px;
+    right: 20px;
+    clip-path: circle();
+}
+.main .not1{
+    position: absolute;
+    top: 30px;
+    right: 120px;
+    font-size: 25px;
+}
+.main .not2{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.main .top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+    margin-left: 25px;
+    margin-right: 35px;
+    
+}
+.main .right .appointment{
+    text-decoration: none;
+    padding: 7px 17px;
+    background-color: var(--color-green);
+    color: white;
+    border-radius: 8px;
+}
+.select{
+    position: relative;
+    width: 150px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    text-transform: capitalize;
+    color: #fff;
+    background: #13565f;
+    text-align: left;
+    padding: 0 15px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.select::after{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.select:hover{
+    background: #13565f;
+}
+
+.select.active{
+    background: #13565f;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.options{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background: #13565f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.options.active{
+    display: block;
+}
+
+.options .item{
+    color: #fff;
+    text-transform: capitalize;
+    width: 100%;
+    height: 30px;
+    padding: 0 15px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.options .item.active{
+    background: #13565f;
+}
+
+/* top sectio end */
+
+/* appointment section */
+.appointment_section{
+    margin-top: 2rem;
+}
+
+.patient  td .patientImg{
+        width: 60px;
+        border-radius: 50%;
+        margin-left: 0px;
+}
+.patient span{
+    font-size: 15px;
+}
+.patient .content-table{
+    border-collapse: collapse;
+    margin: 25px 120px;
+    font-size: 0.9em;
+    min-width: 400px;
+    width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.15 );
+}
+td:first-child,
+th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+
+td:last-child,
+th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+.patient .content-table thead tr{
+    background-color:#13565f;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    
+}
+.patient .content-table th,
+.patient .content-table td{
+    padding: 12px 15px;
+}
+.patient .content-table th.image{
+    padding-right:20px ;
+}
+.patient .content-table tbody tr{
+    border-bottom: 1px solid #f3f3f3;
+
+}
+.patient .content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.patienr .content-table tbody tr:last-child{
+    border-bottom: 2px solid #13565f;
+}
+@media only screen and (max-width:768px){
+    .container {
+        display: grid;
+        grid-template-rows: 2fr 2fr;
+    }
+}
+
+
